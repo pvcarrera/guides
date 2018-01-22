@@ -14,6 +14,7 @@ gem "trailblazer-rails"
 gem "trailblazer-cells"
 gem "cells-rails"
 gem "cells-slim"
+gem 'webpacker'
 
 
 group :test do
