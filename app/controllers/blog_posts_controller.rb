@@ -26,7 +26,7 @@ class BlogPostsController < ApplicationController
   #:index
   def index
     run BlogPost::Index
-    render cell(BlogPost::Cell::Index, result["model"]), layout: false
+    render html: cell(BlogPost::Cell::Index, result["model"], context: {}, layout: Home::Cell::Layout)
   end
   #:index end
 
